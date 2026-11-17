@@ -3,88 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Registration Form</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 600px;
-           margin: auto; padding: 16px; }
-    label { display: block; margin-top: 12px; font-weight: bold; }
-    .inlineLabel { display: inline; font-weight: normal; }
-    fieldset { margin-top: 16px; }
-    input:invalid { border: 1px solid red; }
-    input:valid { border: 1px solid green; }
-  </style>
+  <title>Student Registration</title>
 </head>
 <body>
-  <h1>Student Registration Form</h1>
-  <form action="#" method="post">
-    <fieldset>
-      <legend>Personal Details</legend>
-      <label for="fullName">Full Name</label>
-      <input type="text" id="fullName" name="fullName"
-             placeholder="Pushkar Shahi"
-             required minlength="3" maxlength="50" pattern="[A-Za-z ]+"
-             title="Letters and spaces only, 3 to 50 characters">
-      <label for="emailAddress">Email Address</label>
-      <input type="email" id="emailAddress" name="emailAddress"
-             placeholder="name@example.com" required>
-      <label for="mobileNumber">Mobile Number</label>
-      <input type="tel" id="mobileNumber" name="mobileNumber"
-             placeholder="9876543210"
-             required pattern="[6-9][0-9]{9}"
-             title="10 digit number starting with 6, 7, 8 or 9">
-      <label for="dateOfBirth">Date of Birth</label>
-      <input type="date" id="dateOfBirth" name="dateOfBirth" required
-             min="1990-01-01" max="2010-12-31">
-      <label>Gender</label>
-      <input type="radio" id="genderMale" name="gender" value="male" required>
-      <label for="genderMale" class="inlineLabel">Male</label>
-      <input type="radio" id="genderFemale" name="gender" value="female">
-      <label for="genderFemale" class="inlineLabel">Female</label>
-      <input type="radio" id="genderOther" name="gender" value="other">
-      <label for="genderOther" class="inlineLabel">Other</label>
-    </fieldset>
-    <fieldset>
-      <legend>Academic Details</legend>
-      <label for="courseName">Course</label>
-      <select id="courseName" name="courseName" required>
-        <option value="">-- Select course --</option>
-        <option value="btech-cse">B.Tech Computer Science</option>
-        <option value="btech-ai">B.Tech Artificial Intelligence</option>
-        <option value="bca">BCA</option>
-      </select>
-      <label for="yearOfStudy">Year of Study</label>
-      <input type="number" id="yearOfStudy" name="yearOfStudy"
-             min="1" max="4" required>
-      <label>Interests</label>
-      <input type="checkbox" id="interestWeb" name="interests" value="web">
-      <label for="interestWeb" class="inlineLabel">Web Development</label>
-      <input type="checkbox" id="interestML" name="interests" value="ml">
-      <label for="interestML" class="inlineLabel">Machine Learning</label>
-      <label for="githubProfile">GitHub Profile</label>
-      <input type="url" id="githubProfile" name="githubProfile"
-             placeholder="https://github.com/username">
-      <label for="resumeFile">Upload Resume (PDF)</label>
-      <input type="file" id="resumeFile" name="resumeFile" accept=".pdf">
-    </fieldset>
-    <fieldset>
-      <legend>Account Details</legend>
-      <label for="accountPassword">Password</label>
-      <input type="password" id="accountPassword" name="accountPassword"
-             required minlength="8"
-             pattern="(?=.*[A-Za-z])(?=.*[0-9]).{8,}"
-             title="At least 8 characters with a letter and a number">
-      <label for="currentAddress">Address</label>
-      <textarea id="currentAddress" name="currentAddress" rows="3" cols="40"
-                maxlength="200"
-                placeholder="House no, street, city"></textarea>
-    </fieldset>
-    <p>
-      <input type="checkbox" id="termsAccepted" name="termsAccepted" required>
-      <label for="termsAccepted" class="inlineLabel">
-        I confirm the details above are correct</label>
-    </p>
-    <button type="submit">Register</button>
-    <button type="reset">Clear Form</button>
-  </form>
+  <!-- TODO: form with varied input types and validation attributes -->
 </body>
 </html>
